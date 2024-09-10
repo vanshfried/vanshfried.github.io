@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My E-Commerce Store</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      /* Custom styles for the hero section */
+      .hero-section {
+          background-image: url('https://via.placeholder.com/1500x500');
+          background-size: cover;
+          background-position: center;
+          height: 80vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+      }
+
+      .hero-section .hero-content h1 {
+          font-size: 3rem;
+          margin-bottom: 1rem;
+      }
+
+      .hero-section .hero-content p {
+          font-size: 1.5rem;
+          margin-bottom: 2rem;
+      }
+
+      .hero-section .btn {
+          padding: 0.75rem 2rem;
+          font-size: 1rem;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+          .hero-section .hero-content h1 {
+              font-size: 2rem;
+          }
+
+          .hero-section .hero-content p {
+              font-size: 1.2rem;
+          }
+      }
+
+      /* Search input with icon inside */
+      .search-container {
+          position: relative;
+          width: 20%;
+      }
+
+      .search-container input {
+          padding-right: 40px; /* Make space for the icon */
+      }
+
+      .search-container img {
+          position: absolute;
+          top: 50%;
+          right: 10px; /* Space from the right edge */
+          transform: translateY(-50%);
+          width: 20px;
+          height: 20px;
+      }
+
+      .search-container button {
+          display: none; /* Hide the default button */
+      }
+    </style>
+</head>
+<body>
+
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MyStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex search-container" role="search">
+                    <input class="form-control" type="search" placeholder="Search products..." aria-label="Search">
+                    <img src="/images/search.webp" alt="Search" onclick="this.closest('form').submit();">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <header class="hero-section">
+        <div class="hero-content text-center">
+            <h1>Welcome to My E-Commerce Store</h1>
+            <p>Discover amazing products at unbeatable prices</p>
+            <a href="#" class="btn btn-primary btn-lg">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
