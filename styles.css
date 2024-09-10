@@ -1,0 +1,97 @@
+/* Custom styles for the hero section */
+.hero-section {
+    background-image: url('https://via.placeholder.com/1500x500');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero-section .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-section .btn {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between brand and search bar */
+    align-items: center;
+}
+
+.navbar .navbar-nav {
+    flex: 1; /* Allow navigation links to take up available space */
+}
+
+.navbar .search-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Align search bar to the right */
+    position: relative;
+}
+
+.search-container input {
+    padding-right: 40px; /* Make space for the icon */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 0.9rem; /* Font size for PC */
+    max-width: 500px; /* Larger width for PC */
+    width: 100%;
+}
+
+.search-container img {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Space from the right edge */
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.search-container button {
+    display: none; /* Hide the default button */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero-section .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack items vertically on mobile */
+        text-align: center; /* Center content in the navbar on mobile */
+    }
+
+    .search-container {
+        margin-top: 10px; /* Space from other elements */
+        width: 100%; /* Full width for mobile */
+        position: static; /* Reset position for mobile */
+    }
+
+    .search-container input {
+        max-width: 400px; /* Adjust width for mobile */
+        font-size: 1rem; /* Larger font size for mobile */
+    }
+
+    .search-container img {
+        display: none; /* Hide the icon on mobile */
+    }
+}

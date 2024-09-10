@@ -7,68 +7,8 @@
     <title>My E-Commerce Store</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      /* Custom styles for the hero section */
-      .hero-section {
-          background-image: url('https://via.placeholder.com/1500x500');
-          background-size: cover;
-          background-position: center;
-          height: 80vh;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: #fff;
-      }
-
-      .hero-section .hero-content h1 {
-          font-size: 3rem;
-          margin-bottom: 1rem;
-      }
-
-      .hero-section .hero-content p {
-          font-size: 1.5rem;
-          margin-bottom: 2rem;
-      }
-
-      .hero-section .btn {
-          padding: 0.75rem 2rem;
-          font-size: 1rem;
-      }
-
-      /* Responsive */
-      @media (max-width: 768px) {
-          .hero-section .hero-content h1 {
-              font-size: 2rem;
-          }
-
-          .hero-section .hero-content p {
-              font-size: 1.2rem;
-          }
-      }
-
-      /* Search input with icon inside */
-      .search-container {
-          position: relative;
-          width: 20%;
-      }
-
-      .search-container input {
-          padding-right: 40px; /* Make space for the icon */
-      }
-
-      .search-container img {
-          position: absolute;
-          top: 50%;
-          right: 10px; /* Space from the right edge */
-          transform: translateY(-50%);
-          width: 20px;
-          height: 20px;
-      }
-
-      .search-container button {
-          display: none; /* Hide the default button */
-      }
-    </style>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -94,10 +34,12 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-                <form class="d-flex search-container" role="search">
-                    <input class="form-control" type="search" placeholder="Search products..." aria-label="Search">
-                    <img src="/images/search.webp" alt="Search" onclick="this.closest('form').submit();">
-                </form>
+                <div class="search-container">
+                    <form class="d-flex" role="search">
+                        <input class="form-control" type="search" placeholder="Search products..." aria-label="Search">
+                        <img src="/images/search.webp" alt="Search" onclick="this.closest('form').submit();">
+                    </form>
+                </div>
             </div>
         </div>
     </nav>
